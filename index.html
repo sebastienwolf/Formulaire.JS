@@ -6,19 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
   <h1>Tuto valider un formulaires</h1>
 
   <form id="validation">
-    <input type="number" name="metter votre age" id="age" placeholder="mettre votre age"><br>
-    <!-- <input type="date" name="date de naissance" id="ageDate"> <br> -->
-    <input type="submit" value="validation">
+    <!-- v1 -->
+    <!-- <input type="number" name="metter votre age" id="age" placeholder="mettre votre age"><br> -->
+    <!-- v2 -->
+
+    <input type="date" name="date de naissance" id="ageDate"> <br>
+    <!-- onclick plus la fonction me perrmet d'aller chercher la fonction de JS -->
+    <input type="submit" value="validation" onclick="ageVerif()">
 
   </form>
-  <p style="color: red;" id="erreur"></p>
   <script src="validation.js"></script>
 </body>
 
